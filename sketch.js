@@ -32,7 +32,7 @@ function setup() {
   // 在按鈕的右側創建一個下拉式選單
   dropdown = createSelect();
   dropdown.position(button.x + button.width + 10, 25); // 設置下拉式選單的位置
-  dropdown.size(110, 40); // 設置下拉式選單的大小
+  dropdown.size(120, 40); // 設置下拉式選單的大小
   dropdown.style('font-size', '20px'); // 設置下拉式選單內文字的大小
   dropdown.option('教育科技系');
   dropdown.option('第三周作品');
