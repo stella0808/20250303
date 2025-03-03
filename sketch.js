@@ -36,7 +36,7 @@ function setup() {
   dropdown.style('font-size', '20px'); // 設置下拉式選單內文字的大小
   dropdown.option('教育科技系');
   dropdown.option('第三周作品');
-  dropdown.option('第三周筆記');
+  dropdown.option('第三周講義');
   dropdown.changed(handleDropdownChange);
 
   // 初始化偏移量
