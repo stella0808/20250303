@@ -34,6 +34,7 @@ function setup() {
   dropdown.position(button.x + button.width + 10, 25); // 設置下拉式選單的位置
   dropdown.size(120, 40); // 設置下拉式選單的大小
   dropdown.style('font-size', '20px'); // 設置下拉式選單內文字的大小
+  dropdown.option('淡江大學');
   dropdown.option('教育科技系');
   dropdown.option('第四周測驗');
   dropdown.option('第三周講義');
@@ -87,7 +88,9 @@ function toggleBounce() {
 
 function handleDropdownChange() {
   let selected = dropdown.value();
-  if (selected === '教育科技系') {
+  if (selected === '淡江大學') {
+    iframe.attribute('src', 'https://www.tku.edu.tw/');
+    } else if (selected === '教育科技系') {
     iframe.attribute('src', 'https://www.et.tku.edu.tw/');
   } else if (selected === '第四周測驗') {
     iframe.attribute('src', 'https://stella0808.github.io/20250310/');
