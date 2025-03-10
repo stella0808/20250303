@@ -35,7 +35,7 @@ function setup() {
   dropdown.size(120, 40); // 設置下拉式選單的大小
   dropdown.style('font-size', '20px'); // 設置下拉式選單內文字的大小
   dropdown.option('教育科技系');
-  dropdown.option('第三周作品');
+  dropdown.option('第四周測驗');
   dropdown.option('第三周講義');
   dropdown.changed(handleDropdownChange);
 
@@ -89,8 +89,8 @@ function handleDropdownChange() {
   let selected = dropdown.value();
   if (selected === '教育科技系') {
     iframe.attribute('src', 'https://www.et.tku.edu.tw/');
-  } else if (selected === '第三周作品') {
-    iframe.attribute('src', 'https://stella0808.github.io/20250303/');
+  } else if (selected === '第四周測驗') {
+    iframe.attribute('src', 'https://stella0808.github.io/20250310/');
   } else if (selected === '第三周講義') {
     iframe.attribute('src', 'https://hackmd.io/@PMQvdaUjQhiyuBOw7P0pgQ/S1qQMtfskl');
   }
